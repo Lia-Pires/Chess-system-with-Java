@@ -1,5 +1,6 @@
 package boardgame;
 import boardgame.Piece;
+import boardgame.BoardException;
 
 public class Board {
 
