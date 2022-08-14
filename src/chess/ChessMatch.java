@@ -6,11 +6,9 @@ import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
 
-public class ChessMatch {
+public abstract class ChessMatch extends Piece {
 	
 	private Board board;
-
-	
 	
 	
 	public ChessMatch() {
