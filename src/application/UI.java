@@ -2,10 +2,10 @@ package application;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
+import chess.ChessMatch;
 
 public class UI {
 
@@ -49,6 +49,13 @@ public class UI {
 	
 		
 		
+	}
+	
+	public static void printMatch(ChessMatch chessMatch) {
+		printBoard(chessMatch.getPieces());
+		System.out.println();
+		System.out.println("Turn : " + chessMatch.getTurn());
+		System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
 	}
 	
 	public static void printBoard(ChessPiece[][] pieces) {
